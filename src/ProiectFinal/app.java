@@ -1,3 +1,5 @@
+package ProiectFinal;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,20 +11,19 @@ public class app {
     private JTextField textField1;
     private JButton adaugaButton;
     private JTextField textField2;
-    private JTextField textField3;
     private JTextField textField4;
     private JPanel RootPanel;
     private JLabel clase;
     private JTextArea textArea1;
     private JLabel mesaj;
+    private JComboBox comboBox1;
     private JTextField textField5;
     public int nrclase=0;
     ArrayList<Clasa> clasee = new ArrayList<Clasa>();
 
-
     public static void main(String[] args) {
         JFrame f = new JFrame();
-        f.setTitle("Proiect 2 - AIA3 - Masca Lucian");
+        f.setTitle("Proiect Final - AIA3 - Masca Lucian, Imre Laszlo");
         f.setSize(400,500);//400 width and 500 height
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setLocationRelativeTo(null);
@@ -44,10 +45,10 @@ public class app {
                 else {
                     Integer nr = Integer.parseInt(textField4.getText());
                     String nrString = nr.toString();
-                    clasee.add(new Clasa(textField1.getText(), textField2.getText(), textField3.getText(), nrString));
+                    clasee.add(new Clasa(textField1.getText(), textField2.getText(), comboBox1.getSelectedItem().toString(), nrString));
                     textField1.setText("");
                     textField2.setText("");
-                    textField3.setText("");
+                    comboBox1.toString();
                     textField4.setText("");
                     String clasa = clasee.get(clasee.size() - 1).getClasa();
                     String litera = clasee.get(clasee.size() - 1).getLitera();
