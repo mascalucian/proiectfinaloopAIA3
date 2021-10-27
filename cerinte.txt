@@ -1,0 +1,37 @@
+Total: 210
+
+Punctaj POO (max. 180):
+done Implementarea cel putin a 3 clase cu mai multi constructori +20 puncte
+done Gruparea claselor in unul sau mai multe pachete +10 puncte
+done Folosirea de campuri private si de metode de tip get/set +10 puncte
+done Implementarea si folosirea unei metode toString() +10 puncte
+• Implementarea unei clase de tip singleton +20 puncte
+done Implementarea a cel putin o interfata +10 puncte
+• Implementarea a cel putin o clasa abstracta +10 puncte
+• Implementarea functionalitatii de logging +40 puncte de facut
+• Folosirea mostenirii intre clase +20 puncte
+• Folosirea metodei super in mostenire +10 puncte
+• Folosirea polimorfismului (suprascrierea metodelor) +10 puncte
+done Folosirea referintei this +10 puncte
+Proiect Final
+• Punctaj interfata (max 230):
+done Introducerea de date din interfata grafica (textbox, dropdown,
+checkbox, etc) +30 puncte (Atentie! Fara date “hardcoded”)
+done Validarea datelor de intrare +20 puncte
+done Folosirea a cel putin 3 ferestre +10 puncte
+done Folosirea a cel putin o fereastra modala +10 puncte
+done Tratarea a cel putin 3 evenimente ce apar in aplicatie +10 puncte
+done Afisarea in aplicatie a datelor rezultate in urma procesarilor +10 puncte
+done Folosirea a cel putin 3 constante +10 puncte
+done Folosirea clasei StringBuffer +10 puncte
+done Stocarea datelor prin folosirea clasei ArrayList +20 puncte
+• Stocarea datelor persistente in fisier +30 puncte
+• Stocarea datelor persistente intr-o baza de date (SQLite, mySQL, etc.)
++70 puncte
+Proiect Final
+• Punctaj documentatie + github (max. 100) :
+• Diagrama UML +40 puncte
+• Documentarea codului +20 puncte
+• Prezentare/descriere proiect +20 puncte
+• Afisarea descrierii proiectului in GitHub +10 puncte
+done Dezvoltarea proiectului prin colaborare pe GitHub +10 puncte
