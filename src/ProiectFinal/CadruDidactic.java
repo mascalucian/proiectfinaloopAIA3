@@ -1,29 +1,25 @@
 package ProiectFinal;
 
-public class CadruDidactic implements IPersoana{
+public class CadruDidactic extends Constructors implements IPersoana{
     private String _nume;
     private String _prenume;
-    private String _CNP;
     private String _specializare;
+    private String _CNP;
 
     public CadruDidactic() {
-        _nume = "N/A";
-        _prenume = "N/A";
-        _specializare = "N/A";
-        _CNP = "N/A";
+        super();
     }
 
     public CadruDidactic(String nume, String prenume) {
-        _nume = nume;
-        _prenume = prenume;
-        _specializare = "N/A";
-        _CNP = "N/A";
+        super(nume, prenume);
     }
     public CadruDidactic(String nume, String prenume, String specializare, String CNP) {
-        _nume = nume;
-        _prenume = prenume;
-        _specializare = specializare;
-        _CNP = CNP;
+        super(nume, prenume, specializare, CNP);
+    }
+
+    @Override
+    public String toString(){
+        return super.toString();
     }
 
     @Override

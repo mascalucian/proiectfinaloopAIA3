@@ -1,44 +1,68 @@
 package ProiectFinal;
 
-public class Clasa {
+public class Clasa{
     private String clasa;
-    private final String LITERA;
-    private final String SPECIALIZARE;
+    private String litera;
+    private String specializare;
     private String nrelevi;
     private int index;
 
-    public Clasa(String clasa,String LITERA,String SPECIALIZARE,String nrelevi){
+    private static Clasa _instance;
+
+    private Clasa(String clasa, String litera, String specializare, String nrelevi){
         this.clasa=clasa;
-        this.LITERA=LITERA;
-        this.SPECIALIZARE=SPECIALIZARE;
+        this.litera = litera;
+        this.specializare = specializare;
         this.nrelevi=nrelevi;
     }
-    public Clasa(String clasa,String SPECIALIZARE,String nrelevi){
+    private Clasa(String clasa, String specializare, String nrelevi){
         this.clasa=clasa;
-        this.LITERA="";
-        this.SPECIALIZARE=SPECIALIZARE;
+        this.litera ="";
+        this.specializare = specializare;
         this.nrelevi=nrelevi;
     }
-    public Clasa(String clasa,String nrelevi){
+    private Clasa(String clasa, String nrelevi){
         this.clasa=clasa;
-        this.LITERA="";
-        this.SPECIALIZARE="";
+        this.litera ="";
+        this.specializare ="";
         this.nrelevi=nrelevi;
+    }
+
+    private Clasa() {
+        this.clasa="";
+        this.litera ="";
+        this.specializare ="";
+        this.nrelevi="";
+    }
+
+    public void setEverything(String clasa, String litera, String specializare, String nrelevi) {
+        setClasa(clasa);
+        setLitera(litera);
+        setSpecializare(specializare);
+        setNrelevi(nrelevi);
+    }
+
+    public static Clasa getInstance() {
+        if (null == _instance) {
+            _instance = new Clasa();
+        }
+        return _instance;
     }
 
     public String getClasa(){
         return clasa;
     }
     public String getLitera(){
-        return LITERA;
+        return litera;
     }
     public String getSpecializare(){
-        return SPECIALIZARE;
+        return specializare;
     }
     public String getNrelevi(){
         return nrelevi;
     }
-    public void setClasa(String clasa) {this.clasa=clasa;}
-    public void setNrelevi(String nrelevi) {this.nrelevi=nrelevi;}
-
+    private void setClasa(String clasa) {this.clasa=clasa;}
+    private void setLitera(String litera) {this.litera=litera;}
+    private void setSpecializare(String specializare) {this.specializare=specializare;}
+    private void setNrelevi(String nrelevi) {this.nrelevi=nrelevi;}
 }
