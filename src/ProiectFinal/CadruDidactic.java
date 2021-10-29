@@ -32,7 +32,7 @@ public class CadruDidactic implements IPersoana{
     }
 
     @Override
-    public String getPreume() {
+    public String getPrenume() {
         return _prenume;
     }
 

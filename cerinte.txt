@@ -1,4 +1,4 @@
-Total: 210
+Total: 220
 
 Punctaj POO (max. 180):
 done Implementarea cel putin a 3 clase cu mai multi constructori +20 puncte
@@ -33,5 +33,5 @@ Proiect Final
 • Diagrama UML +40 puncte
 • Documentarea codului +20 puncte
 • Prezentare/descriere proiect +20 puncte
-• Afisarea descrierii proiectului in GitHub +10 puncte
+done Afisarea descrierii proiectului in GitHub +10 puncte
 done Dezvoltarea proiectului prin colaborare pe GitHub +10 puncte
