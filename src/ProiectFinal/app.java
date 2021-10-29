@@ -64,7 +64,11 @@ public class app {
                     if(b){
                     Integer nr = Integer.parseInt(textField4.getText());
                     String nrString = nr.toString();
-                    clasee.add(new Clasa(textField1.getText(), textField2.getText(), comboBox1.getSelectedItem().toString(), nrString));
+
+                    //Singleton
+                    Clasa Singleton = Clasa.getInstance();
+                    Singleton.setEverything(textField1.getText(), textField2.getText(), comboBox1.getSelectedItem().toString(), nrString);
+                    clasee.add(Singleton);
                     textField1.setText("");
                     textField2.setText("");
                     textField4.setText("");
