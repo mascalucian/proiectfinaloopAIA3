@@ -181,7 +181,7 @@
                   <text value="Nume:"/>
                 </properties>
               </component>
-              <component id="80c28" class="javax.swing.JTextField" default-binding="true">
+              <component id="80c28" class="javax.swing.JTextField" binding="studText1">
                 <constraints>
                   <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -189,7 +189,7 @@
                 </constraints>
                 <properties/>
               </component>
-              <component id="927af" class="javax.swing.JTextField">
+              <component id="927af" class="javax.swing.JTextField" binding="studText2">
                 <constraints>
                   <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -219,7 +219,7 @@
                   <text value="CNP"/>
                 </properties>
               </component>
-              <component id="fcaf6" class="javax.swing.JTextField">
+              <component id="fcaf6" class="javax.swing.JTextField" binding="studText4">
                 <constraints>
                   <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -227,7 +227,7 @@
                 </constraints>
                 <properties/>
               </component>
-              <component id="373e1" class="javax.swing.JLabel">
+              <component id="373e1" class="javax.swing.JLabel" binding="mesaj2">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -236,7 +236,7 @@
                   <text value=""/>
                 </properties>
               </component>
-              <component id="930e6" class="javax.swing.JButton" default-binding="true">
+              <component id="930e6" class="javax.swing.JButton" binding="adaugaButton2">
                 <constraints>
                   <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -255,7 +255,7 @@
                   <text value="Prenume:"/>
                 </properties>
               </component>
-              <component id="654dd" class="javax.swing.JComboBox" default-binding="true">
+              <component id="654dd" class="javax.swing.JComboBox" binding="studText3">
                 <constraints>
                   <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -293,7 +293,7 @@
                   <verticalTextPosition value="1"/>
                 </properties>
               </component>
-              <component id="c1368" class="javax.swing.JTextArea" default-binding="true">
+              <component id="c1368" class="javax.swing.JTextArea" binding="textArea2">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="50"/>
@@ -326,7 +326,7 @@
                   <text value="Nume:"/>
                 </properties>
               </component>
-              <component id="3ccf" class="javax.swing.JTextField" default-binding="true">
+              <component id="3ccf" class="javax.swing.JTextField" binding="profText1">
                 <constraints>
                   <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -334,7 +334,7 @@
                 </constraints>
                 <properties/>
               </component>
-              <component id="b6cda" class="javax.swing.JTextField">
+              <component id="b6cda" class="javax.swing.JTextField" binding="profText2">
                 <constraints>
                   <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -364,7 +364,7 @@
                   <text value="CNP"/>
                 </properties>
               </component>
-              <component id="d296a" class="javax.swing.JTextField">
+              <component id="d296a" class="javax.swing.JTextField" binding="profText4">
                 <constraints>
                   <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -372,7 +372,7 @@
                 </constraints>
                 <properties/>
               </component>
-              <component id="b5399" class="javax.swing.JLabel">
+              <component id="b5399" class="javax.swing.JLabel" binding="mesaj3">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -381,7 +381,7 @@
                   <text value=""/>
                 </properties>
               </component>
-              <component id="adf50" class="javax.swing.JButton" default-binding="true">
+              <component id="adf50" class="javax.swing.JButton" binding="adaugaButton3">
                 <constraints>
                   <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -400,7 +400,7 @@
                   <text value="Prenume:"/>
                 </properties>
               </component>
-              <component id="58d46" class="javax.swing.JComboBox" default-binding="true">
+              <component id="58d46" class="javax.swing.JComboBox" binding="profText3">
                 <constraints>
                   <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -438,7 +438,7 @@
                   <verticalTextPosition value="1"/>
                 </properties>
               </component>
-              <component id="83360" class="javax.swing.JTextArea" default-binding="true">
+              <component id="83360" class="javax.swing.JTextArea" binding="textArea3">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="50"/>
