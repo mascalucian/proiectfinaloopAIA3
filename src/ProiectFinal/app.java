@@ -3,6 +3,12 @@ package ProiectFinal;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class app {
@@ -83,6 +89,21 @@ public class app {
                     sb.append(textArea1.getText());
                     sb.append("\r\n" + clasee.size() + ". " + clasa + litera + " - Specializarea: " + specializare + ", avand un numar de " + nrelevi + " elevi");
                     textArea1.setText(String.valueOf(sb));
+
+                    //creerea si append la textul pentru logging
+                    StringBuffer textLogging = new StringBuffer();
+                    DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+                    LocalDateTime now = LocalDateTime.now();
+                    System.out.println(dtf.format(now));
+                        textLogging.append(dtf.format(now)+": Clasa "+ clasa + litera + " - Specializarea: " + specializare + ", avand un numar de " + nrelevi + " elevi a fost adaugata.");
+                    try(FileWriter fw = new FileWriter("logs.txt", true);
+                        BufferedWriter bw = new BufferedWriter(fw);
+                        PrintWriter out = new PrintWriter(bw))
+                    {
+                        out.println(textLogging.toString());
+                    } catch (IOException f) {
+                    }
+
                     }
                 }
             }
