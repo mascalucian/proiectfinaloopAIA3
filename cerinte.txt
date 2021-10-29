@@ -1,17 +1,17 @@
-Total: 220
+Total: 330
 
 Punctaj POO (max. 180):
 done Implementarea cel putin a 3 clase cu mai multi constructori +20 puncte
 done Gruparea claselor in unul sau mai multe pachete +10 puncte
 done Folosirea de campuri private si de metode de tip get/set +10 puncte
 done Implementarea si folosirea unei metode toString() +10 puncte
-• Implementarea unei clase de tip singleton +20 puncte
+done Implementarea unei clase de tip singleton +20 puncte
 done Implementarea a cel putin o interfata +10 puncte
-• Implementarea a cel putin o clasa abstracta +10 puncte
-• Implementarea functionalitatii de logging +40 puncte de facut
-• Folosirea mostenirii intre clase +20 puncte
-• Folosirea metodei super in mostenire +10 puncte
-• Folosirea polimorfismului (suprascrierea metodelor) +10 puncte
+done Implementarea a cel putin o clasa abstracta +10 puncte
+done Implementarea functionalitatii de logging +40 puncte de facut
+done Folosirea mostenirii intre clase +20 puncte
+done Folosirea metodei super in mostenire +10 puncte
+done Folosirea polimorfismului (suprascrierea metodelor) +10 puncte
 done Folosirea referintei this +10 puncte
 Proiect Final
 • Punctaj interfata (max 230):
