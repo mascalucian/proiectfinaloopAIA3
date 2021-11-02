@@ -441,7 +441,7 @@
                 </constraints>
                 <properties>
                   <requestFocusEnabled value="true"/>
-                  <text value="Clase:"/>
+                  <text value="Cadre didatice:"/>
                   <verticalAlignment value="1"/>
                   <verticalTextPosition value="1"/>
                 </properties>

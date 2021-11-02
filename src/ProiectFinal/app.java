@@ -151,6 +151,17 @@ public class app {
                     inceput.append("\r\n" + "- " + clasa + " " + litera + " - Specializarea: " + specializare + ", CNP: " + nrelevi );
                     textArea2.setText(String.valueOf(inceput));
 
+                    //adaugarea studentului in baza de date
+                    StringBuffer dateStudent = new StringBuffer();
+                    dateStudent.append(clasa + ", " + litera + ", " + specializare + ", " + nrelevi);
+                    try(FileWriter fw = new FileWriter("date.csv", true);
+                        BufferedWriter bw = new BufferedWriter(fw);
+                        PrintWriter out = new PrintWriter(bw))
+                    {
+                        out.println(dateStudent.toString());
+                    } catch (IOException f) {
+                    }
+
                     //creerea si append la textul pentru logging
                     StringBuffer textLogging = new StringBuffer();
                     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
