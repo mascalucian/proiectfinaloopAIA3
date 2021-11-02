@@ -141,7 +141,7 @@ public class app {
                     String specializare = clasee.get(clasee.size() - 1).getSpecializare();
                     String nrelevi = clasee.get(clasee.size() - 1).getNrelevi();
 
-                    mesaj2.setText("Clasa " + clasa + litera + " a fost adaugata cu succes.");
+                    mesaj2.setText("Studentul " + clasa + " " + litera + " a fost adaugat cu succes.");
                     System.out.println(clasa + " " + litera);
                     StringBuffer sb = new StringBuffer();
                     sb.append(studText1.getText());
@@ -164,6 +164,46 @@ public class app {
 
             }
 
+        });
+        adaugaButton3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Integer nr = Integer.parseInt(profText4.getText());
+                String nrString = nr.toString();
+
+                //Singleton
+                Clasa Singleton = Clasa.getInstance();
+                Singleton.setEverything(profText1.getText(), profText2.getText(), comboBox1.getSelectedItem().toString(), nrString);
+                clasee.add(Singleton);
+                profText1.setText("");
+                profText2.setText("");
+                profText4.setText("");
+                String clasa = clasee.get(clasee.size() - 1).getClasa();
+                String litera = clasee.get(clasee.size() - 1).getLitera();
+                String specializare = clasee.get(clasee.size() - 1).getSpecializare();
+                String nrelevi = clasee.get(clasee.size() - 1).getNrelevi();
+
+                mesaj3.setText("Profesorul " + clasa + " " + litera + " a fost adaugat cu succes.");
+                System.out.println(clasa + " " + litera);
+                StringBuffer sb = new StringBuffer();
+                sb.append(profText1.getText());
+                sb.append("\r\n" + "- " + clasa + " " + litera + " - Specializarea: " + specializare + ", CNP: " + nrelevi );
+                textArea3.setText(String.valueOf(sb));
+
+                //creerea si append la textul pentru logging
+                StringBuffer textLogging = new StringBuffer();
+                DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+                LocalDateTime now = LocalDateTime.now();
+                System.out.println(dtf.format(now));
+                textLogging.append(dtf.format(now)+": Profesorul "+ clasa + " " + litera + " - Specializarea: " + specializare + ", cu CNP-ul " + nrelevi + " a fost adaugat.");
+                try(FileWriter fw = new FileWriter("logs.txt", true);
+                    BufferedWriter bw = new BufferedWriter(fw);
+                    PrintWriter out = new PrintWriter(bw))
+                {
+                    out.println(textLogging.toString());
+                } catch (IOException f) {
+                }
+            }
         });
     }
     public static boolean isNumeric(String strNum) {

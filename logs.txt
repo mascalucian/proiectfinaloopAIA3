@@ -1,3 +1,6 @@
 2021/10/29 13:59:07: Clasa 12A - Specializarea: Mate-Info, avand un numar de 32 elevi a fost adaugata.
 2021/10/29 14:00:07: Clasa 11B - Specializarea: Bio-Chimie, avand un numar de 20 elevi a fost adaugata.2021/10/29 15:33:43: Studentul Masca Lucian - Specializarea: Mate-Info, cu CNP-ul 500 a fost adaugat.
 2021/10/29 15:34:08: Studentul Masca Lucian - Specializarea: Mate-Info, cu CNP-ul 5000 a fost adaugat.
+2021/11/02 09:31:14: Clasa 12A - Specializarea: Mate-Info, avand un numar de 30 elevi a fost adaugata.
+2021/11/02 09:31:39: Studentul Masca Lucian - Specializarea: Mate-Info, cu CNP-ul 5002 a fost adaugat.
+2021/11/02 09:31:58: Profesorul Roman Adrian - Specializarea: Mate-Info, cu CNP-ul 1000 a fost adaugat.
