@@ -3,10 +3,7 @@ package ProiectFinal;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -37,7 +34,9 @@ public class app {
     private JLabel mesaj3;
     private JTextArea textArea2;
     private JTextArea textArea3;
+    private JButton adaugaStudentiiDinBazaButton;
     private JTextField textField5;
+    StringBuffer inceput = new StringBuffer();
     public int nrclase=0;
     ArrayList<Clasa> clasee = new ArrayList<Clasa>();
 
@@ -53,7 +52,11 @@ public class app {
         f.pack();f.setContentPane(new app().RootPanel);
 
     }
+
+
     public app() {
+
+
         adaugaButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -143,10 +146,10 @@ public class app {
 
                     mesaj2.setText("Studentul " + clasa + " " + litera + " a fost adaugat cu succes.");
                     System.out.println(clasa + " " + litera);
-                    StringBuffer sb = new StringBuffer();
-                    sb.append(studText1.getText());
-                    sb.append("\r\n" + "- " + clasa + " " + litera + " - Specializarea: " + specializare + ", CNP: " + nrelevi );
-                    textArea2.setText(String.valueOf(sb));
+                    //StringBuffer sb = new StringBuffer();
+                    inceput.append(studText1.getText());
+                    inceput.append("\r\n" + "- " + clasa + " " + litera + " - Specializarea: " + specializare + ", CNP: " + nrelevi );
+                    textArea2.setText(String.valueOf(inceput));
 
                     //creerea si append la textul pentru logging
                     StringBuffer textLogging = new StringBuffer();
@@ -202,6 +205,34 @@ public class app {
                 {
                     out.println(textLogging.toString());
                 } catch (IOException f) {
+                }
+            }
+        });
+        adaugaStudentiiDinBazaButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                String line = "";
+                String splitBy = ",";
+                try
+                {
+                    BufferedReader br = new BufferedReader(new FileReader("date.csv"));
+                    while ((line = br.readLine()) != null)
+                    {
+                        String[] studentiInceput = line.split(splitBy);
+                        inceput.append("\r\n" + "- " + studentiInceput[0] + " " + studentiInceput[1] + " - Specializarea: " + studentiInceput[2] + ", CNP: " + studentiInceput[3] );
+                        System.out.println("Studentul [Prenume=" + studentiInceput[0] + ", Nume=" + studentiInceput[1] + ", Profil=" + studentiInceput[2] + ", CNP=" + studentiInceput[3]+"introdus in lista.");
+
+                    }
+                    System.out.println(inceput.toString());
+                    textArea2.setText(inceput.toString());
+                    adaugaStudentiiDinBazaButton.setVisible(false);
+
+
+                }
+                catch (IOException j)
+                {
+                    j.printStackTrace();
                 }
             }
         });
